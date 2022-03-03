@@ -15,3 +15,24 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+  /* Button */
+  .btn-primary {
+    @apply px-5 py-2 rounded-full bg-indigo-500 text-white border border-indigo-500
+  }
+
+  .btn-secondary {
+    @apply px-5 py-2 bg-violet-400 text-white rounded-full
+  }
+
+  /* Button with hover effect */
+  .btn-primary:hover {
+    @apply bg-indigo-600
+  }
+
+  .btn-secondary:hover {
+    @apply bg-violet-500
+  }
+}
