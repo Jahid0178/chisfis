@@ -5,7 +5,7 @@ import Logo from "../../../Assets/Images/logo.svg";
 const Navigation = () => {
   return (
     <>
-      <nav className="m-2 flex justify-between items-center h-12 sticky dark:bg-gray-900">
+      <nav className="p-2 flex flex-col sm:flex-row justify-between w-full h-full bg-white sticky top-0">
         <img className="w-28" src={Logo} alt="logo" />
         <ul>
           <li className="inline-block mx-3 text-indigo-600  hover:text-indigo-500">

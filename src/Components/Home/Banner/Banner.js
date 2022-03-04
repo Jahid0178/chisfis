@@ -3,8 +3,8 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="lg:container mx-auto">
-        <div className="grid gap-2 grid-cols-2 py-20">
+      <div className="xl:container sm:none mx-auto">
+        <div className="grid gap-2 lg:grid-cols-2 md:grid-cols-1 py-20">
           <div>
             <h1 className="text-8xl">Hotel, car & experiences</h1>
             <p className="my-9 text-gray-500">
@@ -15,7 +15,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className="w-full h-full"
+              className="w-full h-full md:w-auto"
               src="https://chisnghiax.com/chisfis/static/media/hero-right.ee78c0ffae92062cbe4e.png"
               alt=""
             />
