@@ -3,7 +3,7 @@ import React from "react";
 const Banner = () => {
   return (
     <>
-      <div className="px-2 xl:container sm:none mx-auto">
+      <div className="px-3 xl:container sm:none mx-auto">
         <div className="grid gap-2 lg:grid-cols-2 md:grid-cols-1 py-20">
           <div>
             <h1 className="text-6xl sm:text-8xl">Hotel, car & experiences</h1>

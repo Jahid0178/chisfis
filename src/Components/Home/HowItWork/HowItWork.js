@@ -5,7 +5,7 @@ import Save from "../../../Assets/Images/Home/Work/save.png";
 
 const HowItWork = () => {
   return (
-    <div className="py-10">
+    <div className="py-10 px-3">
       <div className="container mx-auto">
         <div className="w-full md:w-1/2 mx-auto text-center">
           <h2 className="text-4xl font-semibold">How it work</h2>

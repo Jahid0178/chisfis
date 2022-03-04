@@ -5,7 +5,7 @@ import NewsletterBg from "../../../Assets/Images/Home/Newsletter/news-letter.png
 
 const NewsLetter = () => {
   return (
-    <div className="py-10 px-1">
+    <div className="py-10 px-3">
       <div className="container mx-auto">
         <div className="grid items-center gap-5 md:grid-cols-2">
           <div>
