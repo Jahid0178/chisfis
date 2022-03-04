@@ -35,4 +35,13 @@ code {
   .btn-secondary:hover {
     @apply bg-violet-500
   }
+
+  /* Input */
+  .primary-input {
+    @apply border border-gray-300 px-5 py-2 outline-none rounded-xl text-gray-400
+  }
+
+  .primary-input:focus {
+    @apply ring-2 ring-blue-200
+  }
 }
