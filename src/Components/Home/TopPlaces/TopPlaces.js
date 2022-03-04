@@ -3,7 +3,9 @@ import React from "react";
 const TopPlaces = () => {
   return (
     <div>
-      <h1>This is top places</h1>
+      <div className="lg:container mx-auto">
+        <h1>Top Places</h1>
+      </div>
     </div>
   );
 };
