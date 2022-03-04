@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="xl:container sm:none mx-auto">
         <div className="grid gap-2 lg:grid-cols-2 md:grid-cols-1 py-20">
           <div>
-            <h1 className="text-8xl">Hotel, car & experiences</h1>
+            <h1 className="text-6xl sm:text-8xl">Hotel, car & experiences</h1>
             <p className="my-9 text-gray-500">
               Accompanying us, you have a trip full of experiences. With
               Chisfis, booking accommodation, resort villas, hotels
@@ -15,7 +15,7 @@ const Banner = () => {
           </div>
           <div>
             <img
-              className="w-full h-full md:w-auto"
+              className="w-auto mt-5"
               src="https://chisnghiax.com/chisfis/static/media/hero-right.ee78c0ffae92062cbe4e.png"
               alt=""
             />
