@@ -7,7 +7,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navigation = () => {
   return (
     <>
-      <nav className="p-3 flex items-center w-full h-full sm:flex-row justify-between  bg-white sticky top-0 left-0 right-0">
+      <nav className="p-3 z-10 flex items-center w-full h-full sm:flex-row justify-between  bg-white sticky top-0 left-0 right-0">
         <img className="w-28" src={Logo} alt="logo" />
         <ul className="hidden sm:block toggle">
           <li className="inline-block mx-3 text-indigo-600  hover:text-indigo-500">
