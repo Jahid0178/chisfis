@@ -18,25 +18,25 @@ const Footer = () => {
             <ul className="mt-7">
               <li className="my-5">
                 <Link to="#">
-                  <FaFacebookSquare className="inline-block" />{" "}
+                  <FaFacebookSquare className="inline-block text-blue-600 text-2xl" />{" "}
                   <span className="ml-2">Facebook</span>
                 </Link>
               </li>
               <li className="my-5">
                 <Link to="#">
-                  <FaTwitter className="inline-block" />{" "}
+                  <FaTwitter className="inline-block text-sky-500 text-2xl" />{" "}
                   <span className="ml-2">Twitter</span>
                 </Link>
               </li>
               <li className="my-5">
                 <Link to="#">
-                  <FaYoutube className="inline-block" />{" "}
+                  <FaYoutube className="inline-block text-red-700 text-2xl" />{" "}
                   <span className="ml-2">Youtube</span>
                 </Link>
               </li>
               <li className="my-5">
                 <Link to="#">
-                  <FaInstagram className="inline-block" />{" "}
+                  <FaInstagram className="inline-block text-violet-700 text-2xl" />{" "}
                   <span className="ml-2">Instagram</span>
                 </Link>
               </li>
