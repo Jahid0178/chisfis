@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Footer from "./Components/Shared/Footer/Footer";
 import Navigation from "./Components/Shared/Navigation/Navigation";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
@@ -18,6 +19,7 @@ function App() {
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </>
   );
