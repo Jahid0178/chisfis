@@ -10,7 +10,7 @@ import Logo from "../../../Assets/Images/logo.svg";
 
 const Footer = () => {
   return (
-    <div className="py-5">
+    <div className="py-5 px-3">
       <div className="container mx-auto">
         <div className="grid md:grid-cols-3">
           <div>
