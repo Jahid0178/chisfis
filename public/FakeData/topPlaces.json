@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/FD3KgHy/New-York.webp",
+    "placeName": "New York",
+    "properties": "188,288"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/PGgqh45/Singapore.webp",
+    "placeName": "Singapore",
+    "properties": "167,085"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/G00yKCK/Paris.jpg",
+    "placeName": "Paris",
+    "properties": "459,758"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/KDkZpHH/London.webp",
+    "placeName": "London",
+    "properties": "91,758"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/F5yP6Rc/Tokyo.jpg",
+    "placeName": "Tokyo",
+    "properties": "35,263"
+  },
+  {
+    "id": 6,
+    "img": "https://i.ibb.co/3WGgnyH/Maldives.jpg",
+    "placeName": "Maldives",
+    "properties": "7,897"
+  }
+]
