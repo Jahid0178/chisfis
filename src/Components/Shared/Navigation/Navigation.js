@@ -20,7 +20,9 @@ const Navigation = () => {
             <Link to="/contact-us">Contact Us</Link>
           </li>
           <li className="inline-block mx-3">
-            <button className="btn-primary">Sign Up</button>
+            <Link to="/sign-up" className="btn-primary">
+              Sign Up
+            </Link>
           </li>
         </ul>
         <FontAwesomeIcon className="block text-4xl sm:hidden" icon={faBars} />

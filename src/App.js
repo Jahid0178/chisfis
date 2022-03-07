@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import SignUp from "./Components/Security/SignUp/SignUp";
 import Footer from "./Components/Shared/Footer/Footer";
 import Navigation from "./Components/Shared/Navigation/Navigation";
 import About from "./Pages/About";
@@ -17,6 +18,7 @@ function App() {
           <Route path="/home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/sign-up" element={<SignUp />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
         <Footer />
