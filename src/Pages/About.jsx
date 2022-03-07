@@ -1,9 +1,12 @@
 import React from "react";
+import AboutUs from "../Components/About/AboutUs";
+import Founder from "../Components/About/Founder";
 
 const About = () => {
   return (
     <div>
-      <h1>This is about</h1>
+      <AboutUs />
+      <Founder />
     </div>
   );
 };
