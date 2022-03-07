@@ -15,7 +15,7 @@ const TopPlaces = () => {
   return (
     <>
       <div className="py-10">
-        <div className="lg:container mx-auto">
+        <div className="container mx-auto">
           <div>
             <h2 className="text-4xl font-semibold py-4">Top Places</h2>
             <span className="text-xl text-gray-500">
