@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "img": "https://i.ibb.co/d5gLctn/1.jpg",
+    "placeName": "New York",
+    "properties": "188,288"
+  },
+  {
+    "id": 2,
+    "img": "https://i.ibb.co/pJ3WgD2/2.webp",
+    "placeName": "Singapore",
+    "properties": "167,085"
+  },
+  {
+    "id": 3,
+    "img": "https://i.ibb.co/Bw7CnDP/3.jpg",
+    "placeName": "Paris",
+    "properties": "459,758"
+  },
+  {
+    "id": 4,
+    "img": "https://i.ibb.co/sq4BpxL/4.jpg",
+    "placeName": "London",
+    "properties": "91,758"
+  },
+  {
+    "id": 5,
+    "img": "https://i.ibb.co/Bw7CnDP/3.jpg",
+    "placeName": "Tokyo",
+    "properties": "35,263"
+  }
+]
