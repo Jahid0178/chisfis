@@ -1,6 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import SingleDiscovery from "./SingleDiscovery/SingleDiscovery";
+import "swiper/css";
 
 const Discovery = () => {
+  const [discovery, setDiscovery] = useState([]);
+  useEffect(() => {
+    const url = "/FakeData/discovery.json";
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => setDiscovery(data));
+  }, []);
   return (
     <>
       <div className="py-10 bg-orange-50">
@@ -12,6 +22,23 @@ const Discovery = () => {
             <span className="text-xl mt-2 inline-block">
               Popular places to stay that Chisfis recommends for you
             </span>
+          </div>
+          <div className="mt-5">
+            <Swiper
+              slidesPerView={4}
+              spaceBetween={30}
+              pagination={{
+                clickable: true,
+              }}
+              loop={true}
+              className="mySwiper"
+            >
+              {discovery.map((discover) => (
+                <SwiperSlide>
+                  <SingleDiscovery key={discover.id} discover={discover} />
+                </SwiperSlide>
+              ))}
+            </Swiper>
           </div>
         </div>
       </div>

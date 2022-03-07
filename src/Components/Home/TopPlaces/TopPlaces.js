@@ -32,8 +32,8 @@ const TopPlaces = () => {
                 className="mySwiper"
               >
                 {topPlaces.map((topPlace) => (
-                  <SwiperSlide className="py-2">
-                    <SingleTopPlace key={topPlace.id} topPlace={topPlace} />
+                  <SwiperSlide key={topPlace.id} className="py-2">
+                    <SingleTopPlace topPlace={topPlace} />
                   </SwiperSlide>
                 ))}
               </Swiper>

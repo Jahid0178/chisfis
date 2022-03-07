@@ -1,9 +1,10 @@
 import React from "react";
 
-const SingleDiscovery = () => {
+const SingleDiscovery = (props) => {
+  const { img, placeName, properties } = props.discover;
   return (
     <div>
-      <h2>Single Discovery</h2>
+      <h2>{placeName}</h2>
     </div>
   );
 };
