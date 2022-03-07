@@ -28,6 +28,15 @@ const TopPlaces = () => {
                 pagination={{
                   clickable: true,
                 }}
+                breakpoints={{
+                  640: {
+                    width: 640,
+                    slidesPerView: 2,
+                  },
+                  768: {
+                    slidesPerView: 4,
+                  },
+                }}
                 loop={true}
                 className="mySwiper"
               >
