@@ -28,6 +28,10 @@ code {
     @apply px-5 py-2 bg-violet-400 text-white rounded-full
   }
 
+  .btn-light {
+    @apply bg-slate-100 my-2 py-2 rounded
+  }
+
   /* Button with hover effect */
   .btn-primary:hover {
     @apply bg-indigo-700

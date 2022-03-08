@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const SignUp = () => {
@@ -14,6 +15,16 @@ const SignUp = () => {
       <div className="container mx-auto py-10 px-4">
         <div className="max-w-md mx-auto space-y-6 ">
           <h1 className="py-10 text-center text-4xl font-bold">Signup</h1>
+          <div>
+            <button className="btn-light w-full">
+              <FaFacebookSquare className="inline-block mr-1 text-xl" />
+              Continue with Facebook
+            </button>
+            <button className="btn-light w-full">
+              <FaGoogle className="inline-block mr-1 text-xl" />
+              Continue with Google
+            </button>
+          </div>
           <p className="text-center">---------------- OR ----------------</p>
           <div>
             <form onSubmit={handleSubmit(onSubmit)}>
