@@ -43,8 +43,8 @@ const Discovery = () => {
               className="mySwiper"
             >
               {discovery.map((discover) => (
-                <SwiperSlide>
-                  <SingleDiscovery key={discover.id} discover={discover} />
+                <SwiperSlide key={discover.id}>
+                  <SingleDiscovery discover={discover} />
                 </SwiperSlide>
               ))}
             </Swiper>
