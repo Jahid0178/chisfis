@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const SingleTopPlace = (props) => {
-  const { img, placeName, properties } = props.topPlace;
+  const { img, placeName, properties, id } = props.topPlace;
+  const navigate = useNavigate();
   return (
     <>
-      <div className="w-full h-96 ">
+      <div
+        className="w-full h-96"
+        onClick={() => navigate(`/viewDetails/${id}`)}
+      >
         <img
           className="h-5/6 w-full rounded-2xl object-cover"
           src={img}

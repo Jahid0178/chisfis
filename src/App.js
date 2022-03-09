@@ -4,6 +4,7 @@ import SignIn from "./Components/Security/SignIn/SignIn";
 import SignUp from "./Components/Security/SignUp/SignUp";
 import Footer from "./Components/Shared/Footer/Footer";
 import Navigation from "./Components/Shared/Navigation/Navigation";
+import SingleDetails from "./Components/SingleDetails/SingleDetails";
 import AuthProvider from "./Context/AuthProvider";
 import About from "./Pages/About";
 import ContactUs from "./Pages/ContactUs";
@@ -23,6 +24,7 @@ function App() {
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/sign-up" element={<SignUp />} />
             <Route path="/sign-in" element={<SignIn />} />
+            <Route path="/viewDetails/:id" element={<SingleDetails />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <Footer />
