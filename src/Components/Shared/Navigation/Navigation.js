@@ -29,7 +29,7 @@ const Navigation = () => {
             ""
           )}
           <li className="inline-block mx-3">
-            {!user.email ? (
+            {!user.email && !user.displayName ? (
               <Link to="/sign-up" className="btn-primary">
                 Sign Up
               </Link>

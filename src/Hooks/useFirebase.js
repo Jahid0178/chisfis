@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import {
   getAuth,
   GoogleAuthProvider,
+  FacebookAuthProvider,
   signInWithPopup,
   onAuthStateChanged,
   signOut,
@@ -20,10 +21,30 @@ const useFirebase = () => {
 
   // Provider
   const googleProvider = new GoogleAuthProvider();
+  const facebookProvider = new FacebookAuthProvider();
 
   // Google login
   const signInUsingGoogle = () => {
     signInWithPopup(auth, googleProvider)
+      .then((result) => {
+        const user = result.user;
+        swal({
+          title: "Good job!",
+          text: "User Log In Successfully",
+          icon: "success",
+          button: "Continue",
+        });
+        setUser(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
+
+  // Facebook login
+  const signInUsingFacebook = () => {
+    signInWithPopup(auth, facebookProvider)
       .then((result) => {
         const user = result.user;
         swal({
@@ -72,6 +93,7 @@ const useFirebase = () => {
     user,
     error,
     signInUsingGoogle,
+    signInUsingFacebook,
     logOut,
   };
 };

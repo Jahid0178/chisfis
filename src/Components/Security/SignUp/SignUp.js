@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 const SignUp = () => {
-  const { signInUsingGoogle } = useAuth();
+  const { signInUsingGoogle, signInUsingFacebook } = useAuth();
   const {
     register,
     handleSubmit,
@@ -18,7 +18,7 @@ const SignUp = () => {
         <div className="max-w-md mx-auto space-y-6 ">
           <h1 className="py-10 text-center text-4xl font-bold">Signup</h1>
           <div>
-            <button className="btn-light w-full">
+            <button onClick={signInUsingFacebook} className="btn-light w-full">
               <FaFacebookSquare className="inline-block mr-2 text-xl" />
               Continue with Facebook
             </button>
