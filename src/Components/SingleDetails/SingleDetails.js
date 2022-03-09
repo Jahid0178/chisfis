@@ -24,6 +24,7 @@ const SingleDetails = () => {
                 <FaHome className="inline-block mr-2 text-xl" />
                 {details.properties} properties
               </span>
+              <img className="h-96 mt-4 rounded" src={details.img} alt="" />
             </div>
           </div>
           <div>
