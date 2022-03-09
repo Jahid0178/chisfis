@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "124",
+    "rating": "5",
+    "discount": "10",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 2,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "382",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 3,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "105",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 4,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "266",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 5,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "268",
+    "rating": "5",
+    "discount": "15",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 6,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "321",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 7,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "127",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 8,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "46",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 9,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "200",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 10,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "342",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 11,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "122",
+    "rating": "5",
+    "discount": "5",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  },
+  {
+    "id": 12,
+    "carName": "Kona Electric",
+    "seats": "4 Seats",
+    "gearbox": "Auto gearbox",
+    "price": "144",
+    "rating": "5",
+    "discount": "",
+    "img": "https://chisnghiax.com/chisfis/static/media/1.febd68f959b03d39ff5b.png"
+  }
+]
