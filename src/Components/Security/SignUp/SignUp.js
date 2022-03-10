@@ -54,10 +54,20 @@ const SignUp = () => {
               />
               {/* errors will return when field validation fails  */}
               <br />
+              <label className="mt-5 inline-block" htmlFor="confirm-password">
+                Confirm Password
+              </label>
+              <br />
+              <input
+                id="confirm-password"
+                type="password"
+                className="primary-input my-1 w-full"
+                {...register("password", { required: true })}
+              />
               {errors.exampleRequired && <span>This field is required</span>}
               <br />
               <input
-                className="btn-primary w-full"
+                className="btn-primary w-full mt-4"
                 type="submit"
                 value="Continue"
               />
