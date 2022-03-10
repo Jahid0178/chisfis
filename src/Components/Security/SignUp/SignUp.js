@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 import useAuth from "../../../Hooks/useAuth";
 
 const SignUp = () => {
-  const { signInUsingGoogle, signInUsingFacebook } = useAuth();
+  const { signInUsingGoogle, signInUsingFacebook, createUserWithEmail } =
+    useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => createUserWithEmail(data);
   return (
     <>
       <div className="container mx-auto py-10 px-4">
@@ -62,7 +63,7 @@ const SignUp = () => {
                 id="confirm-password"
                 type="password"
                 className="primary-input my-1 w-full"
-                {...register("password", { required: true })}
+                {...register("confirmPassword", { required: true })}
               />
               {errors.exampleRequired && <span>This field is required</span>}
               <br />

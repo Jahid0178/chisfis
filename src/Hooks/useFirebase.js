@@ -5,6 +5,7 @@ import {
   FacebookAuthProvider,
   signInWithPopup,
   onAuthStateChanged,
+  createUserWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
 import swal from "sweetalert";
@@ -61,6 +62,23 @@ const useFirebase = () => {
       });
   };
 
+  // Creating user with email and password
+  const createUserWithEmail = (data) => {
+    const email = data.email;
+    const password = data.password;
+    const confirmPassword = data.confirmPassword;
+    if (password === confirmPassword) {
+      createUserWithEmailAndPassword(auth, email, password).then(
+        (userCredential) => {
+          const user = userCredential.user;
+          console.log(user);
+        }
+      );
+    } else {
+      alert("Password Not Matched Please Try Again");
+    }
+  };
+
   // Logout
   const logOut = () => {
     signOut(auth)
@@ -94,6 +112,7 @@ const useFirebase = () => {
     error,
     signInUsingGoogle,
     signInUsingFacebook,
+    createUserWithEmail,
     logOut,
   };
 };
