@@ -5,7 +5,7 @@ import useAuth from "../../../Hooks/useAuth";
 const PrivateRoute = ({ children }) => {
   const { user } = useAuth();
   const location = useLocation();
-  return user.email ? (
+  return user.email || user.displayName ? (
     children
   ) : (
     <Navigate to="/sign-up" state={{ from: location }} replace />
