@@ -72,7 +72,13 @@ const useFirebase = () => {
       createUserWithEmailAndPassword(auth, email, password).then(
         (userCredential) => {
           const user = userCredential.user;
-          console.log(user);
+          swal({
+            title: "Good job!",
+            text: "User Created Successfully",
+            icon: "success",
+            button: "Continue",
+          });
+          setUser(user);
         }
       );
     } else {
