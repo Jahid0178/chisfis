@@ -6,6 +6,7 @@ import {
   signInWithPopup,
   onAuthStateChanged,
   createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
   signOut,
 } from "firebase/auth";
 import swal from "sweetalert";
@@ -79,6 +80,25 @@ const useFirebase = () => {
     }
   };
 
+  // Sign in user with email and password
+  const signInUserWithEmail = ({ email, password }) => {
+    signInWithEmailAndPassword(auth, email, password)
+      .then((userCredential) => {
+        const user = userCredential.user;
+        swal({
+          title: "Good job!",
+          text: "User Log In Successfully",
+          icon: "success",
+          button: "Continue",
+        });
+        setUser(user);
+      })
+      .catch((error) => {
+        const errorMessage = error.message;
+        setError(errorMessage);
+      });
+  };
+
   // Logout
   const logOut = () => {
     signOut(auth)
@@ -105,7 +125,7 @@ const useFirebase = () => {
         setUser({});
       }
     });
-  }, []);
+  });
 
   return {
     user,
@@ -113,6 +133,7 @@ const useFirebase = () => {
     signInUsingGoogle,
     signInUsingFacebook,
     createUserWithEmail,
+    signInUserWithEmail,
     logOut,
   };
 };

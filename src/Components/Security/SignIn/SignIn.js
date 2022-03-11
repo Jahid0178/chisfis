@@ -2,14 +2,16 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import { FaFacebookSquare, FaGoogle } from "react-icons/fa";
+import useAuth from "../../../Hooks/useAuth";
 
 const SignIn = () => {
+  const { signInUserWithEmail } = useAuth();
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
-  const onSubmit = (data) => console.log(data);
+  const onSubmit = (data) => signInUserWithEmail(data);
   return (
     <>
       <div className="container mx-auto py-10 px-4">
